@@ -217,6 +217,18 @@ In order to add the EMG data collection in the simulink script, you have to sele
 
 Eye tracking
 ^^^^^^^^^^^^
+Eye movements can be recorded using Eyelink 1000 eye tracker. The procedure to record eye signals is following:
+Turn on Eyelink PC and eyetracker . The default eyelink screen looks like fig. A targer marker will be used to identify participant’s relative eye position, normally the marker will be placed on the forehead or cheek.In the Dexterit window, press Calibrate, the after kinarm handle calibration, press Calibrate Gaze tracker (Figure E2). His will guide the kinarm PC to take control of Eyelink PC. We can select the calibration point span on the screen with 100% span pf the visual screen or less. Once we press << continue>> (Figure E3), the calibration points moves along different spots on the screen and he participant has to move his eyes to fix the gaze on the spot. Eyelink will automatically detect the quality and consistency of gaze signal. This will be repeated 2 times and average gaze error will be calculated and graded as Good, Fair or Poor. Repeat the calibration process until we get a Good Calibration status. Once this is done, we could see eye position on the Dexterit window (as a green marker). Eye signals will be recorded by default (GazeX, GazeY).
+
+A good eye calibration in the beginning is crucial. Otherwise the signal will be interrupted often and those noise spikes will appear. So the focus should be to have the best calibration possible. Things to improve calibration
+- to incline the head as downward as possible (because the camera's virtual position is below the mirror, due to the reflecting)
+- to not wear glasses or contact lenses
+- to open the eyes as much as possible (even if that means to remind the subject regularly)
+- especially for women not to wear any (eye)makeup
+- to optimize the threshold values of the EyeLink (try to maximize the blue and yellow area for pupil and fovea until it spreads to the not desired areas of the eye and then decrease by one or two values to ensure the highest threshold possible)) 
+- make sure that eye-tracking happens in the center of the screen, since calibration is a lot easier there than at the outer calibration points
+- also reduce calibration area to 70% , but be aware that eye-tracking outside of that area will be subpar
+
 
 Kingrip 
 ^^^^^^^
