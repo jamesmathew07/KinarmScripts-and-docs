@@ -1,6 +1,6 @@
 .. Here are some macros to ease the writing and the reading :) 
 
-
+james
 
 Kinarm end-point
 ================
